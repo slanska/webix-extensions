@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webix Extensions Examples</title>
+
+    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
+    <script src="../lib/captcha.js"></script>
+    <script src="../lib/imageuploader.js"></script>
+    <script src="../lib/switchbutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    webix.ready(function ()
+    {
+        webix.ui(
+                {
+                    autosize: true,
+                    view: "layout",
+                    cols: [
+                        {
+                            view: "template", template: "<h2>Webix Extensions Examples-2</h2>"
+                        },
+                        {view: "resizer"},
+                        {view: "form", elements: [
+                            {view: "captcha"},
+                            {view: "switchbutton"}
+                        ]}]
+                }
+        );
+    });
+</script>
+</body>
+</html>
