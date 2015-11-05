@@ -10,6 +10,9 @@
 
 webix.protoUI(
     {
+        /*
+         Borrowed from: http://stackoverflow.com/questions/5366727/convert-array-of-byte-values-to-base64-encoded-string-and-break-long-lines-java
+         */
         _bytesToBase64: function (data)
         {
             var str = String.fromCharCode.apply(null, data);
@@ -26,12 +29,19 @@ webix.protoUI(
             this.height = config.height || 40;
             this.required = config.required || true;
             this.imageUrl = config.imageUrl || "/captcha";
-            this.captchaImageID = webix.uid().toString();
+
             this.refreshButtonID = webix.uid().toString();
             this.borderless = config.borderless || true;
 
+            this.captchaImageID = webix.uid().toString();
+            this.textBoxID = webix.uid().toString();
+
             this.$view.innerHTML =
-                "<div class='item1'><img id='" + this.captchaImageID + "' src='#' alt='captcha'></img></div><div class='item2'></div><div class='item3'></div>";
+                `<div >
+                <img id='${this.captchaImageID}' src='#' alt='Enter captcha'></img></div>
+                <div > <span class='webix_icon fa-refresh fa-large' ></span> </div>
+                <div class="webix_view webix_control webix_el_text">
+                <div class="webix-el_box"><input type="text" id="${this.textBoxID}" /></div></div>`;
             this.refreshValue();
         },
 
