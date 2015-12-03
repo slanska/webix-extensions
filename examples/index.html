@@ -15,9 +15,12 @@
 <body>
 
 
+
 <script type="text/javascript">
+
     webix.ready(function ()
     {
+        webix.ui.fullScreen();
         webix.ui(
                 {
                     autosize: true,
@@ -27,11 +30,27 @@
                             view: "template", template: "<h2>Webix Extensions Examples-2</h2>"
                         },
                         {view: "resizer"},
-                        {view: "form", elements: [
+                        {
+                            view: "form", elements: [
+                            {view: "checkbox", label: 'label', value: 1},
                             {view: "captcha"},
-                            {view: "switchbutton", height: 60, theme: "assertive", small: false},
-                            {view: "text"}
-                        ]}]
+                            {
+                                view: "switchbutton", width: 200,
+
+                                theme: "positive",
+                                small: false,
+                                value: 1,
+                                labelRight: 'labelRight',
+                                label: 'label'
+                            },
+                            {view: "switchbutton", theme: "light", small: true, checkValue: '1'},
+
+                            {view: "switchbutton",  theme: "royal", small: false, value: 1, disabled: true},
+                            {view: "switchbutton",  theme: "royal", small: false, value: 1},
+                            {view: "switchbutton", theme: "light", small: true, value: 1, disabled: true}
+
+                        ]
+                        }]
                 }
         );
     });
