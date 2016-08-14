@@ -15,8 +15,11 @@
 <body>
 
 
-
 <script type="text/javascript">
+    function checkBoxChanged()
+    {
+        console.log(this.getValue())
+    }
 
     webix.ready(function ()
     {
@@ -43,10 +46,15 @@
                                 labelRight: 'labelRight',
                                 label: 'label'
                             },
-                            {view: "switchbutton", theme: "light", small: true, checkValue: '1'},
+                            {
+                                view: "switchbutton", theme: "light", small: true, checkValue: '1',
+                                on: {
+                                    onChange: checkBoxChanged
+                                }
+                            },
 
-                            {view: "switchbutton",  theme: "royal", small: false, value: 1, disabled: true},
-                            {view: "switchbutton",  theme: "royal", small: false, value: 1},
+                            {view: "switchbutton", theme: "royal", small: false, value: 1, disabled: true},
+                            {view: "switchbutton", theme: "royal", small: false, value: 1},
                             {view: "switchbutton", theme: "light", small: true, value: 1, disabled: true}
 
                         ]

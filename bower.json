@@ -1,0 +1,25 @@
+{
+  "name": "slanska-webix",
+  "homepage": "https://github.com/slanska/webix-extensions",
+  "authors": [
+    "slanska <slan_ska@yahoo.com>"
+  ],
+  "description": "Few useful extensions to Webix UI library",
+  "main": "Webix Extensions from SlanSka",
+  "keywords": [
+    "webix",
+    "router",
+    "captcha"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fsmrouter": "*"
+  }
+}

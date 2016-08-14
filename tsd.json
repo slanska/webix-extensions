@@ -6,7 +6,34 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "webix/webix.d.ts": {
-      "commit": "0dd29bf8253536ae24e61c109524e924ea510046"
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "qs/qs.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "promise/promise.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "requirejs/require.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "express/express.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "mime/mime.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
+    },
+    "node/node.d.ts": {
+      "commit": "67557f18a898462614ed14063a54ca33a1cfab12"
     }
   }
 }
